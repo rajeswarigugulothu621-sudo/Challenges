@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baby Moments in Mom's Womb</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff5f7;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      color: #4a235a;
+    }
+
+    header {
+      text-align: center;
+      background-color: #d291bc;
+      padding: 2rem 1rem;
+      border-radius: 10px;
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .month-button {
+      width: 100%;
+      text-align: left;
+      background-color: #f3d7e4;
+      border: none;
+      outline: none;
+      padding: 1rem 1.2rem;
+      font-size: 1.1rem;
+      color: #6a1b9a;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .month-button:hover {
+      background-color: #d7a9c8;
+    }
+
+    .month-content {
+      padding: 1rem 1.2rem;
+      background-color: #fce4ec;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: none;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #4a235a;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #7b4a8a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👶 Baby's Journey in Mom's Womb</h1>
+    <p>Click each month to see baby’s development inside mom</p>
+  </header>
+
+  <button class="month-button">Month 1</button>
+  <div class="month-content">
+    <p>Fertilization and implantation. Baby starts developing the neural tube (brain and spinal cord).</p>
+  </div>
+
+  <button class="month-button">Month 2</button>
+  <div class="month-content">
+    <p>Heart starts beating. Basic facial features and limb buds form.</p>
+  </div>
+
+  <button class="month-button">Month 3</button>
+  <div class="month-content">
+    <p>Organs start to develop, fingers and toes begin to form, and baby starts moving.</p>
+  </div>
+
+  <button class="month-button">Month 4</button>
+  <div class="month-content">
+    <p>Baby's bones harden. Facial features become clearer, and baby can suck and swallow.</p>
+  </div>
+
+  <button class="month-button">Month 5</button>
+  <div class="month-content">
+    <p>Baby’s movements are noticeable (kicking). Hair, eyebrows, and eyelashes grow.</p>
+  </div>
+
+  <button class="month-button">Month 6</button>
+  <div class="month-content">
+    <p>Baby’s lungs develop. Skin is translucent but starts to thicken.</p>
+  </div>
+
+  <button class="month-button">Month 7</button>
+  <div class="month-content">
+    <p>Baby responds to sounds. Rapid brain development and muscle tone increases.</p>
+  </div>
+
+  <button class="month-button">Month 8</button>
+  <div class="month-content">
+    <p>Baby gains weight quickly. Most organs are developed and functional.</p>
+  </div>
+
+  <button class="month-button">Month 9</button>
+  <div class="month-content">
+    <p>Baby prepares for birth by positioning head downward. Skin becomes smooth and baby gains fat.</p>
+  </div>
+
+  <button class="month-button">Month 10</button>
+  <div class="month-content">
+    <p>Final development stage. Baby is fully developed and ready to be born.</p>
+  </div>
+
+  <footer>
+    © 2025 Baby Journey | Made with love for every mom and baby 💜
+  </footer>
+
+  <script>
+    // Select all month buttons and their content divs
+    const buttons = document.querySelectorAll('.month-button');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        // Next sibling is the content div
+        const content = button.nextElementSibling;
+
+        // Toggle display of the content div
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
